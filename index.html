@@ -24,137 +24,81 @@
     <body>
 
 
-        <section id="nonee" class="mb-5">
+        <section id="nonee" class="mb-5 container">
 
-        <div class="container mt-3 mb-3">
-            
-            <h1 style="font-size: 42px;">Find a healthcare provider</h1>
-            <p>Start typing to see matching results</p>
-            <div class="grid-dropdown">
-                <input type="text" class="form-control" id="specialtySearch" placeholder="Healthcare Specialty">
-                <div class="grid-dropdown-menu" id="dropdownMenu">
-                    <div class="grid-container" id="gridContainer">
-                        <!-- Results will be populated here -->
-                    </div>
-                    <div class="no-results" id="noResults" style="display: none;">
-                        No matching results found
+            <div class="mt-3 mb-3">
+                
+                <h1 style="font-size: 42px;">Find a healthcare provider</h1>
+                <p>Start typing to see matching results</p>
+                <div class="grid-dropdown">
+                    <input type="text" class="form-control" id="specialtySearch" placeholder="Healthcare Specialty">
+                    <div class="grid-dropdown-menu" id="dropdownMenu">
+                        <div class="grid-container" id="gridContainer">
+                        </div>
+                        <div class="no-results" id="noResults" style="display: none;">
+                            No matching results found
+                        </div>
                     </div>
                 </div>
-            </div>
-<!--             
-            <div class="mt-3" style="display: none;"><span id="selectedItem"></span>
-            </div> -->
-        </div>              
+            </div>              
 
-                      
+                        
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="grid-dropdown">
-                <input type="text" class="form-control" id="stateSearch" placeholder="States">
-                <div class="grid-dropdown-menu" id="dropdownMenu">
-                    <div class="grid-container" id="gridContainer">
-                        <!-- Results will be populated here -->
-                    </div>
-                    <div class="no-results" id="noResults" style="display: none;">
-                        No matching results found
+            <div class="row">
+                <div class="col-3">
+                    <div class="grid-dropdown">
+                        <input type="text" class="form-control" id="stateSearch" placeholder="States">
+                        <div class="grid-dropdown-menu" id="dropdownMenu">
+                            <div class="grid-container" id="gridContainer">
+                                <!-- Results will be populated here -->
+                            </div>
+                            <div class="no-results" id="noResults" style="display: none;">
+                                No matching results found
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="City" id="city">
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Zip" id="zip">
+                </div>
             </div>
-        </div>
-        <div class="col-6">
-        <input type="text" class="form-control" placeholder="City" id="city">
-        </div>
-        <div class="col-3">
-        <input type="text" class="form-control" placeholder="Zip" id="zip">
-        </div>
-    </div>
-</div>
         
             
-            <div class="container text-center mt-3 mb-4">
+            <div class="text-center mt-3 mb-4">
                 
                 <div class="input-group">
-                <span class="input-group-text">First and last name</span>
-                <input type="text" aria-label="First name" class="form-control" id="f_name">
-                <input type="text" aria-label="Last name" class="form-control" id="l_name">
+                    <span class="input-group-text">First and last name</span>
+                    <input type="text" aria-label="First name" class="form-control" id="f_name">
+                    <input type="text" aria-label="Last name" class="form-control" id="l_name">
                 </div>
 
-                </div>
+            </div>
 
             
 
-<div class="d-grid container">
-  <button class="btn btn-primary btn-lg" type="button" id="search">Search</button>
-  
-</div>
+            <div class="d-grid ">
+                <button class="btn btn-primary btn-lg" type="button" id="search">Search</button>
+            </div>
+            <script src="search.js"></script>
 
-<script src="search.js"></script>
-
-
-
-            
             
         </section>
          
         <div class="container mt-4">
-        <section id="results">
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-6" id="results-col">
-                    
-                    <!-- Doctor Result 1 -->
-                    <div class="doctor-card">
-                        <div class="row">
-                            <div class="col-6">
-                                <h5 class="doctor-name"><strong>Dr. Sarah M. Johnson</strong></h5>
-                                <p class="specialty">Cardiology</p>
-                            </div>
-                            <div class="col-6 contact-info">
-                                <h5>12345 Medical Drive</h5>
-                                <h5>Los Angeles, CA, 90210</h5>
-                                <h5>123-456-7890</h5>
-                                <p class="affiliations">UCLA Medical Center</p>
-                            </div>
-                        </div>
+            <section id="results">
+                <div class="row" style="min-height: 100vh;">
+                    <div class="col-12 col-md-8 col-lg-6" id="results-col">                                             
                     </div>
-                    
-                    <!-- Doctor Result 2 -->
-                    <div class="doctor-card">
-                        <div class="row">
-                            <div class="col-6">
-                                <h5 class="doctor-name"><strong>Dr. Michael R. Chen</strong></h5>
-                                <p class="specialty">Orthopedic Surgery</p>
-                            </div>
-                            <div class="col-6 contact-info">
-                                <h5>8765 Health Plaza</h5>
-                                <h5>San Francisco, CA, 94102</h5>
-                                <h5>987-654-3210</h5>
-                                <p class="affiliations">UCSF Medical Center</p>
-                            </div>
-                        </div>
+                    <div class="col-lg-6 d-none d-lg-block" style="position: sticky; top: 20px; height: fit-content;">
+                        <p>What up?</p>
                     </div>
-                    
-                    <!-- Doctor Result 3 -->
-                    <div class="doctor-card">
-                        <div class="row">
-                            <div class="col-6">
-                                <h5 class="doctor-name"><strong>Dr. Emily K. Rodriguez</strong></h5>
-                                <p class="specialty">Pediatrics</p>
-                            </div>
-                            <div class="col-6 contact-info">
-                                <h5>456 Children's Way</h5>
-                                <h5>San Diego, CA, 92101</h5>
-                                <h5>555-123-4567</h5>
-                                <p class="affiliations">Children's Hospital San Diego</p>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
     
     </body>
 </html>
