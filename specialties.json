@@ -1,0 +1,2362 @@
+[
+ {
+  "id": 1,
+  "specialty": "General Practice",
+  "classification": ""
+ },
+ {
+  "id": 2,
+  "specialty": "Surgery",
+  "classification": ""
+ },
+ {
+  "id": 3,
+  "specialty": "Hospice and Palliative Medicine",
+  "classification": ""
+ },
+ {
+  "id": 4,
+  "specialty": "Pediatric Surgery",
+  "classification": ""
+ },
+ {
+  "id": 5,
+  "specialty": "Plastic and Reconstructive Surgery",
+  "classification": ""
+ },
+ {
+  "id": 6,
+  "specialty": "Surgery of the Hand",
+  "classification": ""
+ },
+ {
+  "id": 7,
+  "specialty": "Surgical Critical Care",
+  "classification": ""
+ },
+ {
+  "id": 8,
+  "specialty": "Surgical Oncology",
+  "classification": ""
+ },
+ {
+  "id": 9,
+  "specialty": "Trauma Surgery",
+  "classification": ""
+ },
+ {
+  "id": 10,
+  "specialty": "Vascular Surgery",
+  "classification": ""
+ },
+ {
+  "id": 11,
+  "specialty": "Thoracic Surgery (Cardiothoracic Vascular Surgery)",
+  "classification": ""
+ },
+ {
+  "id": 12,
+  "specialty": "Transplant Surgery",
+  "classification": ""
+ },
+ {
+  "id": 13,
+  "specialty": "Colon & Rectal Surgery",
+  "classification": ""
+ },
+ {
+  "id": 14,
+  "specialty": "Neurological Surgery",
+  "classification": ""
+ },
+ {
+  "id": 15,
+  "specialty": "Oral & Maxillofacial Surgery",
+  "classification": ""
+ },
+ {
+  "id": 16,
+  "specialty": "Orthopedic Surgery",
+  "classification": ""
+ },
+ {
+  "id": 17,
+  "specialty": "Adult Reconstructive Orthopedic Surgery",
+  "classification": ""
+ },
+ {
+  "id": 18,
+  "specialty": "Foot and Ankle Surgery",
+  "classification": ""
+ },
+ {
+  "id": 19,
+  "specialty": "Hand Surgery",
+  "classification": ""
+ },
+ {
+  "id": 20,
+  "specialty": "Orthopedic Surgery of the Spine",
+  "classification": ""
+ },
+ {
+  "id": 21,
+  "specialty": "Orthopedic Trauma",
+  "classification": ""
+ },
+ {
+  "id": 22,
+  "specialty": "Pediatric Orthopedic Surgery",
+  "classification": ""
+ },
+ {
+  "id": 23,
+  "specialty": "Sports Medicine",
+  "classification": ""
+ },
+ {
+  "id": 24,
+  "specialty": "Plastic Surgery",
+  "classification": ""
+ },
+ {
+  "id": 25,
+  "specialty": "Plastic Surgery Within the Head & Neck",
+  "classification": ""
+ },
+ {
+  "id": 26,
+  "specialty": "Allergy and Immunology",
+  "classification": ""
+ },
+ {
+  "id": 27,
+  "specialty": "Allergy",
+  "classification": ""
+ },
+ {
+  "id": 28,
+  "specialty": "Clinical & Laboratory Immunology",
+  "classification": ""
+ },
+ {
+  "id": 29,
+  "specialty": " Otolaryngology ",
+  "classification": ""
+ },
+ {
+  "id": 30,
+  "specialty": "Facial Plastic Surgery",
+  "classification": ""
+ },
+ {
+  "id": 31,
+  "specialty": "Otolaryngic Allergy",
+  "classification": ""
+ },
+ {
+  "id": 32,
+  "specialty": "Otology & Neurotology",
+  "classification": ""
+ },
+ {
+  "id": 33,
+  "specialty": "Pediatric Otolaryngology",
+  "classification": ""
+ },
+ {
+  "id": 34,
+  "specialty": "Plastic Surgery within the Head & Neck",
+  "classification": ""
+ },
+ {
+  "id": 35,
+  "specialty": "Sleep Medicine",
+  "classification": ""
+ },
+ {
+  "id": 36,
+  "specialty": "Anesthesiology",
+  "classification": ""
+ },
+ {
+  "id": 37,
+  "specialty": "Addiction Medicine",
+  "classification": ""
+ },
+ {
+  "id": 38,
+  "specialty": "Critical Care Medicine",
+  "classification": ""
+ },
+ {
+  "id": 39,
+  "specialty": "Pain Medicine",
+  "classification": ""
+ },
+ {
+  "id": 40,
+  "specialty": "Pediatric Anesthesiology",
+  "classification": ""
+ },
+ {
+  "id": 41,
+  "specialty": "Cardiovascular Disease",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 42,
+  "specialty": "Dermatology",
+  "classification": ""
+ },
+ {
+  "id": 43,
+  "specialty": "Clinical & Laboratory Dermatological Immunology",
+  "classification": "Dermatology"
+ },
+ {
+  "id": 44,
+  "specialty": "MOHS-Micrographic Surgery",
+  "classification": "Dermatology"
+ },
+ {
+  "id": 45,
+  "specialty": "Dermapathology",
+  "classification": "Dermatology"
+ },
+ {
+  "id": 46,
+  "specialty": "Pediatric Dermatology",
+  "classification": "Dermatology"
+ },
+ {
+  "id": 47,
+  "specialty": "Procedural Dermatology",
+  "classification": "Dermatology"
+ },
+ {
+  "id": 48,
+  "specialty": "Family Medicine",
+  "classification": ""
+ },
+ {
+  "id": 49,
+  "specialty": "Addiction Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 50,
+  "specialty": "Adolescent Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 51,
+  "specialty": "Adult Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 52,
+  "specialty": "Bariatric Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 53,
+  "specialty": "Geriatric Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 54,
+  "specialty": "Hospice and Palliative Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 55,
+  "specialty": "Sports Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 56,
+  "specialty": "Sleep Medicine",
+  "classification": "Family Medicine"
+ },
+ {
+  "id": 57,
+  "specialty": "Interventional Pain Medicine",
+  "classification": "Pain Medicine"
+ },
+ {
+  "id": 58,
+  "specialty": "Gastroenterology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 59,
+  "specialty": "Internal Medicine",
+  "classification": ""
+ },
+ {
+  "id": 60,
+  "specialty": "Addiction Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 61,
+  "specialty": "Adolescent Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 62,
+  "specialty": "Advanced Heart Failure and Transplant Cardiology",
+  "classification": ""
+ },
+ {
+  "id": 63,
+  "specialty": "Allergy & Immunology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 64,
+  "specialty": "Bariatric Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 65,
+  "specialty": "Clinical & Laboratory Immunology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 66,
+  "specialty": "Critical Care Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 67,
+  "specialty": "Internal Medicine, Endocrinology, Diabetes, & Metabolism",
+  "classification": ""
+ },
+ {
+  "id": 68,
+  "specialty": "Geriatric Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 69,
+  "specialty": "Hematology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 70,
+  "specialty": "Hematology & Oncology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 71,
+  "specialty": "Hepatology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 72,
+  "specialty": "Hospice and Palliative Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 73,
+  "specialty": "Infectious Disease",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 74,
+  "specialty": "Magnetic Resonance Imaging (MRI)",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 75,
+  "specialty": "Medical Oncology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 76,
+  "specialty": "Nephrology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 77,
+  "specialty": "Pulmonary Disease",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 78,
+  "specialty": "Rheumatology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 79,
+  "specialty": "Sleep Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 80,
+  "specialty": "Sports Medicine",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 81,
+  "specialty": "Transplant Hepatology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 82,
+  "specialty": "Neuromusculoskeletal Medicine & OMM",
+  "classification": ""
+ },
+ {
+  "id": 83,
+  "specialty": "Sports Medicine",
+  "classification": "Neuromusculoskeletal Medicine"
+ },
+ {
+  "id": 84,
+  "specialty": "Neurology",
+  "classification": "Psychiatry and Neurology"
+ },
+ {
+  "id": 85,
+  "specialty": "Neurology with Special Qualifications in Child Neurology",
+  "classification": "Psychiatry and Neurology"
+ },
+ {
+  "id": 86,
+  "specialty": "Neuroradiology",
+  "classification": ""
+ },
+ {
+  "id": 87,
+  "specialty": "Epilepsy",
+  "classification": "Psychiatry and Neurology"
+ },
+ {
+  "id": 88,
+  "specialty": "Neurocritical Care",
+  "classification": ""
+ },
+ {
+  "id": 89,
+  "specialty": "Language and Hearing Service Providers   ",
+  "classification": "Speech"
+ },
+ {
+  "id": 90,
+  "specialty": "Obstetrics & Gynecology",
+  "classification": ""
+ },
+ {
+  "id": 91,
+  "specialty": "Bariatric Medicine",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 92,
+  "specialty": "Critical Care Medicine",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 93,
+  "specialty": "Female Pelvic Medicine and Reconstructive Surgery",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 94,
+  "specialty": "Gynecologic Oncology",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 95,
+  "specialty": "Gynecology",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 96,
+  "specialty": "Hospice and Palliative Medicine",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 97,
+  "specialty": "Maternal & Fetal Medicine",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 98,
+  "specialty": "Complex Family Planning",
+  "classification": ""
+ },
+ {
+  "id": 99,
+  "specialty": "Obstetrics",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 100,
+  "specialty": "Reproductive Endocrinology",
+  "classification": "Obstetrics & Gynecology"
+ },
+ {
+  "id": 101,
+  "specialty": "General Surgery",
+  "classification": "Hospice and Palliative Medicine"
+ },
+ {
+  "id": 102,
+  "specialty": "Family Practice",
+  "classification": "Hospice and Palliative Medicine"
+ },
+ {
+  "id": 103,
+  "specialty": "Anesthesiology",
+  "classification": "Hospice and Palliative Medicine"
+ },
+ {
+  "id": 104,
+  "specialty": "Internal Medicine",
+  "classification": "Hospice and Palliative Medicine"
+ },
+ {
+  "id": 105,
+  "specialty": "Obstetrics & Gynecology",
+  "classification": "Hospice and Palliative Medicine"
+ },
+ {
+  "id": 106,
+  "specialty": "Neuropsychiatry",
+  "classification": "Hospice and Palliative Medicine"
+ },
+ {
+  "id": 107,
+  "specialty": "Emergency Medicine",
+  "classification": "Hospice and Palliative Medicine"
+ },
+ {
+  "id": 108,
+  "specialty": "Ophthalmology",
+  "classification": ""
+ },
+ {
+  "id": 109,
+  "specialty": "Glaucoma Specialist",
+  "classification": "Ophthalmology"
+ },
+ {
+  "id": 110,
+  "specialty": "Retina Specialist",
+  "classification": "Ophthalmology"
+ },
+ {
+  "id": 111,
+  "specialty": "Uveitis and Ocular Inflammatory Disease",
+  "classification": "Ophthalmology"
+ },
+ {
+  "id": 112,
+  "specialty": "Neuro-ophthalmology",
+  "classification": ""
+ },
+ {
+  "id": 113,
+  "specialty": "Pediatric Ophthalmology and Strabismus Specialist",
+  "classification": ""
+ },
+ {
+  "id": 114,
+  "specialty": "Cornea and External Diseases Specialist",
+  "classification": "Ophthalmology"
+ },
+ {
+  "id": 115,
+  "specialty": "Ophthalmic Plastic and Reconstructive Surgery",
+  "classification": ""
+ },
+ {
+  "id": 116,
+  "specialty": "Oral & Maxillofacial Surgery",
+  "classification": "Dentist"
+ },
+ {
+  "id": 117,
+  "specialty": "Adult Reconstructive Orthopedic Surgery",
+  "classification": "Orthopedic Surgery"
+ },
+ {
+  "id": 118,
+  "specialty": "Foot and Ankle Surgery",
+  "classification": "Orthopedic Surgery"
+ },
+ {
+  "id": 119,
+  "specialty": "Hand Surgery",
+  "classification": "Orthopedic Surgery"
+ },
+ {
+  "id": 120,
+  "specialty": "Orthopedic Surgery of the Spine",
+  "classification": "Orthopedic Surgery"
+ },
+ {
+  "id": 121,
+  "specialty": "Orthopedic Trauma",
+  "classification": "Orthopedic Surgery"
+ },
+ {
+  "id": 122,
+  "specialty": "Pediatric Orthopedic Surgery",
+  "classification": "Orthopedic Surgery"
+ },
+ {
+  "id": 123,
+  "specialty": "Sports Medicine",
+  "classification": "Orthopedic Surgery"
+ },
+ {
+  "id": 124,
+  "specialty": "Clinical Cardiatric Electrophysiology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 125,
+  "specialty": "Anatomic Pathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 126,
+  "specialty": "Anatomic Pathology & Clinical Pathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 127,
+  "specialty": "Blood Banking & Transfusion Medicine",
+  "classification": "Pathology"
+ },
+ {
+  "id": 128,
+  "specialty": "Chemical Pathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 129,
+  "specialty": "Clinical Pathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 130,
+  "specialty": "Laboratory Medicine",
+  "classification": ""
+ },
+ {
+  "id": 131,
+  "specialty": "Cytopathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 132,
+  "specialty": "Dermapathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 133,
+  "specialty": "Forensic Pathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 134,
+  "specialty": "Hematology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 135,
+  "specialty": "Immunopathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 136,
+  "specialty": "Medical Microbiology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 137,
+  "specialty": "Molecular Genetic Pathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 138,
+  "specialty": "Neuropathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 139,
+  "specialty": "Pediatric Pathology",
+  "classification": "Pathology"
+ },
+ {
+  "id": 140,
+  "specialty": "Clinical Informatics",
+  "classification": ""
+ },
+ {
+  "id": 141,
+  "specialty": "Sports Medicine",
+  "classification": "Emergency Medicine"
+ },
+ {
+  "id": 142,
+  "specialty": "Sports Medicine",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 143,
+  "specialty": "Brain Injury",
+  "classification": "Physical Medicine & Rehabilitation"
+ },
+ {
+  "id": 144,
+  "specialty": "Sports Medicine",
+  "classification": "Physical Medicine & Rehabilitation"
+ },
+ {
+  "id": 145,
+  "specialty": "Sports Medicine",
+  "classification": "Preventive Medicine"
+ },
+ {
+  "id": 146,
+  "specialty": "Sports Medicine",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 147,
+  "specialty": "Plastic Surgery Within the Head and Neck",
+  "classification": "Plastic Surgery"
+ },
+ {
+  "id": 148,
+  "specialty": "Surgery of the Hand",
+  "classification": "Plastic Surgery"
+ },
+ {
+  "id": 149,
+  "specialty": "Physical Medicine & Rehabilitation",
+  "classification": ""
+ },
+ {
+  "id": 150,
+  "specialty": "Hospice and Palliative Medicine",
+  "classification": "Physical Medicine & Rehabilitation"
+ },
+ {
+  "id": 151,
+  "specialty": "Neuromuscular Medicine",
+  "classification": "Physical Medicine & Rehabilitation"
+ },
+ {
+  "id": 152,
+  "specialty": "Pain Medicine",
+  "classification": "Physical Medicine & Rehabilitation"
+ },
+ {
+  "id": 153,
+  "specialty": "Pediatric Rehabilitation Medicine",
+  "classification": "Physical Medicine & Rehabilitation"
+ },
+ {
+  "id": 154,
+  "specialty": "Spinal Cord Injury Medicine",
+  "classification": "Physical Medicine & Rehabilitation"
+ },
+ {
+  "id": 155,
+  "specialty": "Psychiatry ",
+  "classification": ""
+ },
+ {
+  "id": 156,
+  "specialty": "Respiratory, Developmental, Rehabilitative and Restorative Service , Brain Injury Medicine",
+  "classification": ""
+ },
+ {
+  "id": 157,
+  "specialty": "Diagnostic Radiology",
+  "classification": "Radiology"
+ },
+ {
+  "id": 158,
+  "specialty": "Radiological Physics",
+  "classification": "Radiology"
+ },
+ {
+  "id": 159,
+  "specialty": "Diagnostic Ultrasound",
+  "classification": "Radiology"
+ },
+ {
+  "id": 160,
+  "specialty": "Diagnostic Neuroimaging",
+  "classification": "Radiology"
+ },
+ {
+  "id": 161,
+  "specialty": "Pediatric Radiology",
+  "classification": "Radiology"
+ },
+ {
+  "id": 162,
+  "specialty": "Nursing Service Providers, Registered Nurse, Cardiac Rehabilitation",
+  "classification": ""
+ },
+ {
+  "id": 163,
+  "specialty": "Center",
+  "classification": ""
+ },
+ {
+  "id": 164,
+  "specialty": "Anesthesiologist Assistant",
+  "classification": ""
+ },
+ {
+  "id": 165,
+  "specialty": "Urology",
+  "classification": ""
+ },
+ {
+  "id": 166,
+  "specialty": "Pediatric Urology",
+  "classification": "Urology"
+ },
+ {
+  "id": 167,
+  "specialty": "Female Pelvic Medicine & Reconstructive Surgery",
+  "classification": ""
+ },
+ {
+  "id": 168,
+  "specialty": "Chiropractor",
+  "classification": ""
+ },
+ {
+  "id": 169,
+  "specialty": "Independent Medical Examiner",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 170,
+  "specialty": "Internist",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 171,
+  "specialty": "Neurology",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 172,
+  "specialty": "Nutrition",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 173,
+  "specialty": "Occupational Medicine",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 174,
+  "specialty": "Orthopedic",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 175,
+  "specialty": "Pediatric Chiropractor",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 176,
+  "specialty": "Radiology",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 177,
+  "specialty": "Rehabilitation",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 178,
+  "specialty": "Sports Physician",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 179,
+  "specialty": "Thermography",
+  "classification": "Chiropractor"
+ },
+ {
+  "id": 180,
+  "specialty": "Nuclear Medicine",
+  "classification": ""
+ },
+ {
+  "id": 181,
+  "specialty": "Nuclear Radiology",
+  "classification": ""
+ },
+ {
+  "id": 182,
+  "specialty": "In Vivo & In Vitro Nuclear Medicine",
+  "classification": "Nuclear Medicine"
+ },
+ {
+  "id": 183,
+  "specialty": "Nuclear Cardiology",
+  "classification": "Nuclear Medicine"
+ },
+ {
+  "id": 184,
+  "specialty": "Nuclear Imaging & Therapy",
+  "classification": "Nuclear Medicine"
+ },
+ {
+  "id": 185,
+  "specialty": "Pediatrics",
+  "classification": ""
+ },
+ {
+  "id": 186,
+  "specialty": "Adolescent Medicine",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 187,
+  "specialty": "Clinical & Laboratory Immunology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 188,
+  "specialty": "Developmental\u00e2\u20ac\u201cBehavioral Pediatrics",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 189,
+  "specialty": "Hospice and Palliative Medicine",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 190,
+  "specialty": "Medical Toxicology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 191,
+  "specialty": "Neonatal-Perinatal Medicine",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 192,
+  "specialty": "Neurodevelopmental Disabilities",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 193,
+  "specialty": "Pediatric Allergy & Immunology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 194,
+  "specialty": "Pediatric Cardiology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 195,
+  "specialty": "Pediatric Critical Care Medicine",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 196,
+  "specialty": "Pediatric Emergency Medicine",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 197,
+  "specialty": "Pediatric Endocrinology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 198,
+  "specialty": "Pediatric Gastroenterology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 199,
+  "specialty": "Pediatric Hematology-Oncology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 200,
+  "specialty": "Pediatric Infectious Diseases",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 201,
+  "specialty": "Pediatric Nephrology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 202,
+  "specialty": "Pediatric Pulmonology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 203,
+  "specialty": "Pediatric Rheumatology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 204,
+  "specialty": "Pediatric Transplant Hepatology",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 205,
+  "specialty": "Sleep Medicine",
+  "classification": "Pediatrics"
+ },
+ {
+  "id": 206,
+  "specialty": "Obesity Medicine",
+  "classification": ""
+ },
+ {
+  "id": 207,
+  "specialty": "Child Abuse Pediatrics",
+  "classification": ""
+ },
+ {
+  "id": 208,
+  "specialty": "Surgery of the Hand",
+  "classification": "Surgery"
+ },
+ {
+  "id": 209,
+  "specialty": "Optometrist",
+  "classification": ""
+ },
+ {
+  "id": 210,
+  "specialty": "Corneal and Contact Management",
+  "classification": "Optometrist"
+ },
+ {
+  "id": 211,
+  "specialty": "Low Vision Rehabilitation",
+  "classification": "Optometrist"
+ },
+ {
+  "id": 212,
+  "specialty": "Occupational Vision",
+  "classification": "Optometrist"
+ },
+ {
+  "id": 213,
+  "specialty": "Pediatrics",
+  "classification": "Optometrist"
+ },
+ {
+  "id": 214,
+  "specialty": "Sports Vision",
+  "classification": "Optometrist"
+ },
+ {
+  "id": 215,
+  "specialty": "Vision Therapy",
+  "classification": "Optometrist"
+ },
+ {
+  "id": 216,
+  "specialty": "Certified Nurse",
+  "classification": "Midwife"
+ },
+ {
+  "id": 217,
+  "specialty": "Certified Registered ",
+  "classification": "Nurse Anesthetist"
+ },
+ {
+  "id": 218,
+  "specialty": "Clinic-Center, Radiology, Mammography",
+  "classification": ""
+ },
+ {
+  "id": 219,
+  "specialty": "Clinic-Center, Radiology, Mobile Mammography",
+  "classification": ""
+ },
+ {
+  "id": 220,
+  "specialty": "Internal Medicine, Endocrinology, Diabetes & Metabolism",
+  "classification": ""
+ },
+ {
+  "id": 221,
+  "specialty": "Physiological Laboratory",
+  "classification": ""
+ },
+ {
+  "id": 222,
+  "specialty": "Podiatrist",
+  "classification": ""
+ },
+ {
+  "id": 223,
+  "specialty": "Foot & Ankle Surgery",
+  "classification": "Podiatrist"
+ },
+ {
+  "id": 224,
+  "specialty": "Foot Surgery",
+  "classification": "Podiatrist"
+ },
+ {
+  "id": 225,
+  "specialty": "General Practice",
+  "classification": "Podiatrist"
+ },
+ {
+  "id": 226,
+  "specialty": "Primary Podiatric Medicine",
+  "classification": "Podiatrist"
+ },
+ {
+  "id": 227,
+  "specialty": "Public Medicine",
+  "classification": "Podiatrist"
+ },
+ {
+  "id": 228,
+  "specialty": "Radiology",
+  "classification": "Podiatrist"
+ },
+ {
+  "id": 229,
+  "specialty": "Sports Medicine",
+  "classification": "Podiatrist"
+ },
+ {
+  "id": 230,
+  "specialty": "Ambulatory Surgical",
+  "classification": "Clinic-Center"
+ },
+ {
+  "id": 231,
+  "specialty": "Nurse Practitioner",
+  "classification": ""
+ },
+ {
+  "id": 232,
+  "specialty": "Acute Care",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 233,
+  "specialty": "Adult Health",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 234,
+  "specialty": "Community Health",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 235,
+  "specialty": "Critical Care Medicine",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 236,
+  "specialty": "Family",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 237,
+  "specialty": "Gerontology",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 238,
+  "specialty": "Neonatal",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 239,
+  "specialty": "Nurse Practitioner, Neonatal, Critical Care",
+  "classification": ""
+ },
+ {
+  "id": 240,
+  "specialty": "Obstetrics & Gynecology",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 241,
+  "specialty": "Occupational Health",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 242,
+  "specialty": "Pediatrics",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 243,
+  "specialty": "Nurse Practitioner, Pediatrics, Critical Care",
+  "classification": ""
+ },
+ {
+  "id": 244,
+  "specialty": "Perinatal",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 245,
+  "specialty": "Primary Care",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 246,
+  "specialty": "Mental Health",
+  "classification": ""
+ },
+ {
+  "id": 247,
+  "specialty": "School",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 248,
+  "specialty": "Women's Health",
+  "classification": "Nurse Practitioner"
+ },
+ {
+  "id": 249,
+  "specialty": "Orthotic Supplier",
+  "classification": ""
+ },
+ {
+  "id": 250,
+  "specialty": "Durable Medical Equipment & Medical Supplies",
+  "classification": ""
+ },
+ {
+  "id": 251,
+  "specialty": "Orthotist",
+  "classification": ""
+ },
+ {
+  "id": 252,
+  "specialty": "Anaplastologist",
+  "classification": ""
+ },
+ {
+  "id": 253,
+  "specialty": "Prosthetist",
+  "classification": ""
+ },
+ {
+  "id": 254,
+  "specialty": "Pharmacy",
+  "classification": ""
+ },
+ {
+  "id": 255,
+  "specialty": "Clinic Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 256,
+  "specialty": "Retail Pharmacy",
+  "classification": ""
+ },
+ {
+  "id": 257,
+  "specialty": "Compounding Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 258,
+  "specialty": "Home Infusion Therapy Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 259,
+  "specialty": "Institutional Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 260,
+  "specialty": "Long-term Care Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 261,
+  "specialty": "Mail Order Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 262,
+  "specialty": "Managed Care Organization Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 263,
+  "specialty": "Nuclear Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 264,
+  "specialty": "Specialty Pharmacy",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 265,
+  "specialty": "Ambulance",
+  "classification": ""
+ },
+ {
+  "id": 266,
+  "specialty": "Air Transport",
+  "classification": "Ambulance"
+ },
+ {
+  "id": 267,
+  "specialty": "Land Transport",
+  "classification": "Ambulance"
+ },
+ {
+  "id": 268,
+  "specialty": "Water Transport",
+  "classification": "Ambulance"
+ },
+ {
+  "id": 269,
+  "specialty": "Public Health or Welfare",
+  "classification": ""
+ },
+ {
+  "id": 270,
+  "specialty": "Voluntary or Charitable",
+  "classification": ""
+ },
+ {
+  "id": 271,
+  "specialty": "Psychologist",
+  "classification": ""
+ },
+ {
+  "id": 272,
+  "specialty": "Addiction (Substance Abuse Disorder)",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 273,
+  "specialty": "Adult Development & Aging",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 274,
+  "specialty": "Clinical",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 275,
+  "specialty": "Clinical Child & Adolescent",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 276,
+  "specialty": "Cognitive & Behavioral",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 277,
+  "specialty": "Counseling",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 278,
+  "specialty": "Educational",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 279,
+  "specialty": "Exercise & Sports",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 280,
+  "specialty": "Family",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 281,
+  "specialty": "Forensic",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 282,
+  "specialty": "Group Psychotherapy",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 283,
+  "specialty": "Health",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 284,
+  "specialty": "Health Service",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 285,
+  "specialty": "Men & Masculinity",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 286,
+  "specialty": "Intellectual & Developmental Disabilities ",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 287,
+  "specialty": "Prescribing (Medical)",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 288,
+  "specialty": "Psychoanalysis",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 289,
+  "specialty": "Psychotherapy",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 290,
+  "specialty": "Rehabilitation",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 291,
+  "specialty": "School",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 292,
+  "specialty": "Women",
+  "classification": "Psychologist"
+ },
+ {
+  "id": 293,
+  "specialty": "Assistant Behavior Analyst",
+  "classification": ""
+ },
+ {
+  "id": 294,
+  "specialty": "Technician",
+  "classification": ""
+ },
+ {
+  "id": 295,
+  "specialty": "Portable X-Ray Supplier",
+  "classification": ""
+ },
+ {
+  "id": 296,
+  "specialty": "Audiologist",
+  "classification": ""
+ },
+ {
+  "id": 297,
+  "specialty": "Assistive Technology Supplier",
+  "classification": ""
+ },
+ {
+  "id": 298,
+  "specialty": "Assistive Technology Practitioner",
+  "classification": "Audiologist"
+ },
+ {
+  "id": 299,
+  "specialty": "Physical Therapist",
+  "classification": ""
+ },
+ {
+  "id": 300,
+  "specialty": "Cardiopulmonary",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 301,
+  "specialty": "Physical Therapist, Electrophysiology, Clinical",
+  "classification": ""
+ },
+ {
+  "id": 302,
+  "specialty": "Ergonomics",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 303,
+  "specialty": "Geriatrics",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 304,
+  "specialty": "Hand",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 305,
+  "specialty": "Human Factors",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 306,
+  "specialty": "Neurology",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 307,
+  "specialty": "Orthopedic",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 308,
+  "specialty": "Pediatrics",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 309,
+  "specialty": "Sports",
+  "classification": "Physical Therapist"
+ },
+ {
+  "id": 310,
+  "specialty": "Occupational Therapist",
+  "classification": ""
+ },
+ {
+  "id": 311,
+  "specialty": "Driving and Community Mobility",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 312,
+  "specialty": "Environmental Modification",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 313,
+  "specialty": "Ergonomics",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 314,
+  "specialty": "Occupational Therapist, Feeding, Eating &Swallowing",
+  "classification": ""
+ },
+ {
+  "id": 315,
+  "specialty": "Gerontology",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 316,
+  "specialty": "Hand",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 317,
+  "specialty": "Human Factors",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 318,
+  "specialty": "Low Vision",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 319,
+  "specialty": "Mental Health",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 320,
+  "specialty": "Neurorehabilitation",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 321,
+  "specialty": "Pediatrics",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 322,
+  "specialty": "Physical Rehabilitation",
+  "classification": "Occupational Therapist"
+ },
+ {
+  "id": 323,
+  "specialty": "Clinical Medical Laboratory",
+  "classification": ""
+ },
+ {
+  "id": 324,
+  "specialty": "Multi-Specialty  ",
+  "classification": "Center"
+ },
+ {
+  "id": 325,
+  "specialty": "Physical Therapy",
+  "classification": "Center"
+ },
+ {
+  "id": 326,
+  "specialty": "Multi-Specialty",
+  "classification": ""
+ },
+ {
+  "id": 327,
+  "specialty": "Single-Specialty",
+  "classification": ""
+ },
+ {
+  "id": 328,
+  "specialty": "Registered",
+  "classification": "Dietician"
+ },
+ {
+  "id": 329,
+  "specialty": "Dietician, Registered, Nutrition, Metabolic",
+  "classification": ""
+ },
+ {
+  "id": 330,
+  "specialty": "Dietician, Registered, Nutrition, Pediatric",
+  "classification": ""
+ },
+ {
+  "id": 331,
+  "specialty": "Dietician, Registered, Nutrition, Renal",
+  "classification": ""
+ },
+ {
+  "id": 332,
+  "specialty": "Dietician, Registered, Nutrition, Gerontological",
+  "classification": ""
+ },
+ {
+  "id": 333,
+  "specialty": "Dietician, Registered, Nutrition, Obesity and Weight Management",
+  "classification": ""
+ },
+ {
+  "id": 334,
+  "specialty": "Dietician, Registered, Nutrition, Oncology",
+  "classification": ""
+ },
+ {
+  "id": 335,
+  "specialty": "Dietician, Registered, Nutrition, Pediatric Critical Care",
+  "classification": ""
+ },
+ {
+  "id": 336,
+  "specialty": "Dietician, Registered, Nutrition, Sports Dietetics",
+  "classification": ""
+ },
+ {
+  "id": 337,
+  "specialty": "Pain Medicine",
+  "classification": "Pain Medicine"
+ },
+ {
+  "id": 338,
+  "specialty": "Radiology",
+  "classification": "Center"
+ },
+ {
+  "id": 339,
+  "specialty": "Other",
+  "classification": "Technician"
+ },
+ {
+  "id": 340,
+  "specialty": "Vascular Surgery",
+  "classification": "Surgery"
+ },
+ {
+  "id": 341,
+  "specialty": "Addiction Medicine",
+  "classification": "Anesthesiology"
+ },
+ {
+  "id": 342,
+  "specialty": "Addiction Medicine",
+  "classification": "Psychiatry & Neurology"
+ },
+ {
+  "id": 343,
+  "specialty": "Clinical",
+  "classification": "Social Worker"
+ },
+ {
+  "id": 344,
+  "specialty": "Aerospace Medicine",
+  "classification": "Preventive Medicine"
+ },
+ {
+  "id": 345,
+  "specialty": "Medical Toxicology",
+  "classification": "Preventive Medicine"
+ },
+ {
+  "id": 346,
+  "specialty": "Occupational Medicine",
+  "classification": "Preventive Medicine"
+ },
+ {
+  "id": 347,
+  "specialty": "Occupational Environmental Medicine",
+  "classification": ""
+ },
+ {
+  "id": 348,
+  "specialty": "Public Health & General Preventive Medicine",
+  "classification": "Preventive Medicine"
+ },
+ {
+  "id": 349,
+  "specialty": "Undersea and Hyperbaric Medicine",
+  "classification": "Preventive Medicine"
+ },
+ {
+  "id": 350,
+  "specialty": "Oral and Maxillofacial Surgery",
+  "classification": ""
+ },
+ {
+  "id": 351,
+  "specialty": " Psychiatry & Neurology",
+  "classification": ""
+ },
+ {
+  "id": 352,
+  "specialty": "Addiction Psychiatry",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 353,
+  "specialty": "Bariatric Medicine",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 354,
+  "specialty": "Behavioral Neurology & Neuropsychiatry",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 355,
+  "specialty": "Child & Adolescent Psychiatry",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 356,
+  "specialty": "Clinical Neurophysiology",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 357,
+  "specialty": "Diagnostic Neuroimaging",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 358,
+  "specialty": "Forensic Psychiatry",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 359,
+  "specialty": "Geriatric Psychiatry",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 360,
+  "specialty": "Hospice & Palliative Medicine",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 361,
+  "specialty": "Neurodevelopmental Disabilities",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 362,
+  "specialty": "Neurology",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 363,
+  "specialty": "Neurology with Special Qualifications in Child Neurology",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 364,
+  "specialty": "Neuromuscular Medicine",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 365,
+  "specialty": "Pain Medicine",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 366,
+  "specialty": "Psychiatry",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 367,
+  "specialty": "Psychosomatic Medicine",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 368,
+  "specialty": "Sleep Medicine",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 369,
+  "specialty": "Vascular Neurology",
+  "classification": " Psychiatry & Neurology"
+ },
+ {
+  "id": 370,
+  "specialty": "Clinical Nurse Specialist",
+  "classification": ""
+ },
+ {
+  "id": 371,
+  "specialty": "Acute Care",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 372,
+  "specialty": "Adult Health",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 373,
+  "specialty": "Chronic Care",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 374,
+  "specialty": "Public Health",
+  "classification": ""
+ },
+ {
+  "id": 375,
+  "specialty": "Critical Care Medicine",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 376,
+  "specialty": "Emergency",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 377,
+  "specialty": "Ethics",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 378,
+  "specialty": "Family Health",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 379,
+  "specialty": "Gerontology",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 380,
+  "specialty": "Holistic",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 381,
+  "specialty": "Home Health",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 382,
+  "specialty": "Informatics",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 383,
+  "specialty": "Long-term Care",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 384,
+  "specialty": "Medical-Surgical",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 385,
+  "specialty": "Neonatal",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 386,
+  "specialty": "Neuroscience",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 387,
+  "specialty": "Occupational Health",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 388,
+  "specialty": "Oncology",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 389,
+  "specialty": "Clinical Nurse Specialist, Oncology, Pediatrics",
+  "classification": ""
+ },
+ {
+  "id": 390,
+  "specialty": "Pediatrics",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 391,
+  "specialty": "Perinatal",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 392,
+  "specialty": "Perioperative",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 393,
+  "specialty": "Adult",
+  "classification": "Mental Health"
+ },
+ {
+  "id": 394,
+  "specialty": "Child & Adolescent",
+  "classification": "Mental Health"
+ },
+ {
+  "id": 395,
+  "specialty": "Child & Family",
+  "classification": "Mental Health"
+ },
+ {
+  "id": 396,
+  "specialty": "Chronically Ill",
+  "classification": "Mental Health"
+ },
+ {
+  "id": 397,
+  "specialty": "Community",
+  "classification": "Mental Health"
+ },
+ {
+  "id": 398,
+  "specialty": "Geropsychiatric",
+  "classification": "Mental Health"
+ },
+ {
+  "id": 399,
+  "specialty": "Rehabilitation",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 400,
+  "specialty": "School",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 401,
+  "specialty": "Transplantation",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 402,
+  "specialty": "Women\u00e2\u20ac\u2122s Health",
+  "classification": "Clinical Nurse Specialist"
+ },
+ {
+  "id": 403,
+  "specialty": "Surgical Oncology",
+  "classification": "Surgery"
+ },
+ {
+  "id": 404,
+  "specialty": "Radiation Oncology",
+  "classification": "Radiology"
+ },
+ {
+  "id": 405,
+  "specialty": "Emergency Medicine",
+  "classification": ""
+ },
+ {
+  "id": 406,
+  "specialty": "Emergency Medical Services",
+  "classification": "Emergency Medicine"
+ },
+ {
+  "id": 407,
+  "specialty": "Hospice and Palliative Medicine",
+  "classification": "Emergency Medicine"
+ },
+ {
+  "id": 408,
+  "specialty": "Medical Toxicology",
+  "classification": "Emergency Medicine"
+ },
+ {
+  "id": 409,
+  "specialty": "Pediatric Emergency Medicine",
+  "classification": "Emergency Medicine"
+ },
+ {
+  "id": 410,
+  "specialty": "Undersea and Hyperbaric Medicine",
+  "classification": "Emergency Medicine"
+ },
+ {
+  "id": 411,
+  "specialty": "Vascular and Interventional Radiology",
+  "classification": "Radiology"
+ },
+ {
+  "id": 412,
+  "specialty": "Hospice & Palliative Medicine",
+  "classification": ""
+ },
+ {
+  "id": 413,
+  "specialty": "Optician",
+  "classification": "Technologist"
+ },
+ {
+  "id": 414,
+  "specialty": "Physician Assistant",
+  "classification": ""
+ },
+ {
+  "id": 415,
+  "specialty": "Medical",
+  "classification": "Physician Assistant"
+ },
+ {
+  "id": 416,
+  "specialty": "Surgical",
+  "classification": "Physician Assistant"
+ },
+ {
+  "id": 417,
+  "specialty": "General Acute Care Hospital",
+  "classification": ""
+ },
+ {
+  "id": 418,
+  "specialty": "Children",
+  "classification": "General Acute Care Hospital"
+ },
+ {
+  "id": 419,
+  "specialty": "Long Term Care Hospital",
+  "classification": ""
+ },
+ {
+  "id": 420,
+  "specialty": "Psychiatric Hospital",
+  "classification": ""
+ },
+ {
+  "id": 421,
+  "specialty": "Rehabilitation Hospital",
+  "classification": ""
+ },
+ {
+  "id": 422,
+  "specialty": "Epilepsy Unit",
+  "classification": ""
+ },
+ {
+  "id": 423,
+  "specialty": "Substance Use Disorder Unit",
+  "classification": ""
+ },
+ {
+  "id": 424,
+  "specialty": "Chronic Disease Hospital",
+  "classification": ""
+ },
+ {
+  "id": 425,
+  "specialty": "Children",
+  "classification": ""
+ },
+ {
+  "id": 426,
+  "specialty": "Rural",
+  "classification": ""
+ },
+ {
+  "id": 427,
+  "specialty": "Women",
+  "classification": ""
+ },
+ {
+  "id": 428,
+  "specialty": "Military Hospital",
+  "classification": ""
+ },
+ {
+  "id": 429,
+  "specialty": "Military General Acute Care Hospital",
+  "classification": ""
+ },
+ {
+  "id": 430,
+  "specialty": "Military General Acute Care Hospital. Operational (Transportable)",
+  "classification": ""
+ },
+ {
+  "id": 431,
+  "specialty": "Medicare Defined Swing Bed Unit",
+  "classification": ""
+ },
+ {
+  "id": 432,
+  "specialty": "Psychiatric Unit",
+  "classification": ""
+ },
+ {
+  "id": 433,
+  "specialty": "Rehabilitation Unit",
+  "classification": ""
+ },
+ {
+  "id": 434,
+  "specialty": "Special(ty) Hospital",
+  "classification": ""
+ },
+ {
+  "id": 435,
+  "specialty": "Critical Access",
+  "classification": "General Acute Care Hospital"
+ },
+ {
+  "id": 436,
+  "specialty": "Skilled Nursing Facility",
+  "classification": ""
+ },
+ {
+  "id": 437,
+  "specialty": "Pediatric",
+  "classification": "Nursing Care"
+ },
+ {
+  "id": 438,
+  "specialty": "Mentally Retarded",
+  "classification": "Intermediate Care Facility"
+ },
+ {
+  "id": 439,
+  "specialty": "Nursing Facility",
+  "classification": ""
+ },
+ {
+  "id": 440,
+  "specialty": "Home Health",
+  "classification": ""
+ },
+ {
+  "id": 441,
+  "specialty": "Critical Care",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 442,
+  "specialty": "Pediatrics",
+  "classification": "Pharmacy"
+ },
+ {
+  "id": 443,
+  "specialty": "U) Pharmacy",
+  "classification": ""
+ },
+ {
+  "id": 444,
+  "specialty": "Oxygen Equipment & Supplies",
+  "classification": "Durable Medical Equipment & Medical Supplies"
+ },
+ {
+  "id": 445,
+  "specialty": "Rehabilitation",
+  "classification": "Center"
+ },
+ {
+  "id": 446,
+  "specialty": "Organ Procurement Organization",
+  "classification": ""
+ },
+ {
+  "id": 447,
+  "specialty": "Mental Health",
+  "classification": "Center"
+ },
+ {
+  "id": 448,
+  "specialty": "Center, Rehabilitation, Comprehensive Outpatient Rehabilitation Facility (CORF)",
+  "classification": ""
+ },
+ {
+  "id": 449,
+  "specialty": "End-Stage Renal Disease (ESRD) Treatment",
+  "classification": ""
+ },
+ {
+  "id": 450,
+  "specialty": "Federally Qualified Health Center (FQHC)",
+  "classification": ""
+ },
+ {
+  "id": 451,
+  "specialty": "Community Based",
+  "classification": "Hospice Care"
+ },
+ {
+  "id": 452,
+  "specialty": "Military Clinical Medical Laboratory",
+  "classification": ""
+ },
+ {
+  "id": 453,
+  "specialty": "Inpatient",
+  "classification": "Hospice"
+ },
+ {
+  "id": 454,
+  "specialty": "Religious Non-medical Health Care Institution",
+  "classification": ""
+ },
+ {
+  "id": 455,
+  "specialty": "Rural Health",
+  "classification": "Center"
+ },
+ {
+  "id": 456,
+  "specialty": "Ocularist",
+  "classification": "Technologist"
+ },
+ {
+  "id": 457,
+  "specialty": "Sleep Disorder Diagnostic",
+  "classification": ""
+ },
+ {
+  "id": 458,
+  "specialty": "Interventional Cardiology",
+  "classification": "Internal Medicine"
+ },
+ {
+  "id": 459,
+  "specialty": "Dentist",
+  "classification": ""
+ },
+ {
+  "id": 460,
+  "specialty": "Hospitalist",
+  "classification": ""
+ },
+ {
+  "id": 461,
+  "specialty": "Health Educator",
+  "classification": "Other Service Providers"
+ },
+ {
+  "id": 462,
+  "specialty": "Clinical Genetics",
+  "classification": ""
+ },
+ {
+  "id": 463,
+  "specialty": "Clinical Biochemical Genetics",
+  "classification": ""
+ },
+ {
+  "id": 464,
+  "specialty": "Clinical Molecular Genetics",
+  "classification": ""
+ },
+ {
+  "id": 465,
+  "specialty": "Ph.D. Medical Genetics",
+  "classification": ""
+ },
+ {
+  "id": 466,
+  "specialty": "Molecular Genetic Pathology",
+  "classification": ""
+ },
+ {
+  "id": 467,
+  "specialty": "Undersea and Hyperbaric Medicine ",
+  "classification": ""
+ },
+ {
+  "id": 468,
+  "specialty": "Suppliers, Pharmacy, Home Infusion Therapy Services",
+  "classification": ""
+ },
+ {
+  "id": 469,
+  "specialty": "Allopathic & Osteopathic Physicians, Dermatology, MOHS-Micrographic Surgery",
+  "classification": ""
+ },
+ {
+  "id": 470,
+  "specialty": "Internal Medicine",
+  "classification": "Allopathic & Osteopathic Physicians"
+ },
+ {
+  "id": 471,
+  "specialty": "Marriage and Family Therapist",
+  "classification": ""
+ },
+ {
+  "id": 472,
+  "specialty": "Counselor",
+  "classification": ""
+ }
+]
