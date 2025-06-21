@@ -1,18 +1,6 @@
 const id = ['specialtySearch', 'stateSearch', 'city', 'zip', 'f_name', 'l_name'];
-
-class Card {
-    constructor(config = {}) {
-        this.config = {
-            name: 'name',
-            specialties: 'specialties',
-            address: 'address',
-            city: 'city',
-            state: 'state',
-            phone: 'phone',
-            
-        };
-    }
-}
+let map;
+let currentMarkers = []; // Track all markers
 
 function entry(id) {
     return document.getElementById(id).value;
@@ -47,23 +35,32 @@ function buildApiUrl() {
 
 document.getElementById('search').addEventListener('click', function() {
     console.log("Search button clicked");
-    
+    let loc = "";
+
     // Log all form values for debugging
     for (let i = 0; i < id.length; i++) {
         const inputElement = document.getElementById(id[i]);
         if (inputElement != null && inputElement != undefined) {
             console.log(id[i], inputElement.value);
+            if (id[i] == 'city') {
+                loc = inputElement.value + ", " + loc;
+            }
+            if (id[i] == 'zip') {
+                loc += " " + inputElement.value;
+            }
+            if (id[i] == 'stateSearch') {
+                loc = inputElement.value;
+            }
         }
     }
     
     const apiUrl = buildApiUrl();
     console.log("API URL:", apiUrl);
-    
     // Call the search function
-    searchProviders(apiUrl);
+    searchProviders(apiUrl, loc);
 });
 
-async function searchProviders(url) {
+async function searchProviders(url, location) {
     try {
         console.log("Making request to:", url);
         
@@ -77,7 +74,7 @@ async function searchProviders(url) {
         console.log("API Response:", data);
         
         // Display results (you can customize this part)
-        displayResults(data);
+        displayResults(data, location);
         
     } catch (error) {
         console.error('Error:', error);
@@ -87,9 +84,10 @@ async function searchProviders(url) {
     }
 }
 
-function displayResults(data) {
+function displayResults(data, loc) {
     // Find or create a results container
     let resultsContainer = document.getElementById('results-col');
+    
     if (!resultsContainer) {
         resultsContainer = document.createElement('div');
         resultsContainer.id = 'results-col';
@@ -100,9 +98,47 @@ function displayResults(data) {
         resultsContainer.innerHTML = '<p>No results found.</p>';
         return;
     }
-    
+
+    let mapContainer = document.getElementById('mapContainer');
+    if (!mapContainer) {
+        mapContainer = document.createElement('div');
+        mapContainer.id = 'mapContainer';
+        mapContainer.style.height = '50vh';  // Change this value
+        mapContainer.style.width = '100%';
+        document.body.appendChild(mapContainer);
+
+    }
+    let coords;
+    try {
+        console.log("COORDS?");
+        coords = getCoords(loc);
+        console.log(coords);
+    }
+    catch (error) {console.log("AAH!")};
+    // Initialize map with a default location
+    if (!map) {
+        map = L.map('mapContainer').setView([34.0522, -118.2437], 12); // Default to LA
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+    }
+
+    currentMarkers.forEach(marker => {
+        map.removeLayer(marker);
+    });
+    currentMarkers = [];
+
+    // Then get the actual coordinates and update the map
+    getCoords(loc).then(coords => {
+        if (coords) {
+            map.setView(coords, 12);
+        }
+    });
+
     let html = `<h3>Found ${data.result_count} providers:</h3>`;
+
     
+
     data.results.forEach(provider => {
         const basic = provider.basic;
         const addresses = provider.addresses || [];
@@ -134,21 +170,37 @@ function displayResults(data) {
             providerName = basic.organization_name;
             providerType = 'Organization';
             
-            // Add authorized official if available
-            // if (basic.authorized_official_first_name && basic.authorized_official_last_name) {
-            //     providerName += ` (Auth. Official: ${basic.authorized_official_first_name} ${basic.authorized_official_last_name}`;
-            //     if (basic.authorized_official_credential) {
-            //         providerName += `, ${basic.authorized_official_credential}`;
-            //     }
-            //     providerName += ')';
-            // }
         } else {
             // Fallback - sometimes the structure might be different
             providerName = 'Name not available';
             providerType = 'Unknown';
         }
         
-
+        // const coords = getCoords(`${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''},
+        //     ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}
+        //     `);
+        // const marker = L.marker(coords).addTo(map);
+        // marker.bindPopup(`<strong>${providerName}</strong><br>${taxonomies[0].desc}<br><small>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''},
+        //     ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</small>`);
+        
+        // map.setView(coords, 15);
+        // marker.openPopup();
+        loc = `${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}, ${address.city},
+         ${address.state} ${formatZipCode(address.postal_code)}`;
+        getCoords(loc).then(coords => {
+        if (coords) {
+            const popupContent = `
+            <div>
+                <strong>${providerName}</strong><br>
+                ${taxonomies[0].desc || 'Practice Information'}<br>
+                <small>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}<br>
+                ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</small>
+            </div>
+        `;
+        
+        L.marker(coords).addTo(map).bindPopup(popupContent);
+        }
+        });        
 
         html +=    `<div class="doctor-card">
                         <div class="row">
@@ -168,7 +220,9 @@ function displayResults(data) {
     });
     
     resultsContainer.innerHTML = html;
+
 }
+
 
 
 
@@ -200,3 +254,38 @@ function formatZipCode(zipCode) {
     return cleanZip.slice(0,5);
 }
 
+
+async function getCoords(address) {
+    console.error("API KEY REQUIRED!");
+    try {
+        const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${API_KEY}`);
+
+        const data = await response.json();
+        console.log("FOUND", data.results);
+        
+        if (data.results.length > 0) {
+            return [parseFloat(data.results[0].geometry.lat), parseFloat(data.results[0].geometry.lng)];
+        }
+        else {
+            console.error('Address not found');
+            return null;
+        }
+    }
+    catch (error) {
+        console.error('Geocoding error:', error);
+        return null;
+    }
+}
+
+function addPinFromAddress(coords, name, details) {
+            
+    
+    const marker = L.marker(coords).addTo(map);
+    marker.bindPopup(`<strong>${name}</strong><br>${details}<br><small>${address}</small>`);
+    
+    map.setView(coords, 15);
+    marker.openPopup();
+    
+    return { coords, marker };
+    
+}
