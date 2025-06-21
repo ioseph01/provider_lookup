@@ -1,4 +1,7 @@
 const id = ['specialtySearch', 'stateSearch', 'city', 'zip', 'f_name', 'l_name'];
+const pin = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16"><path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+    </svg>`
+    
 let map;
 let currentMarkers = []; // Track all markers
 
@@ -83,7 +86,6 @@ async function searchProviders(url, location) {
         displayError(error.message);
     }
 }
-
 function displayResults(data, loc) {
     // Find or create a results container
     let resultsContainer = document.getElementById('results-col');
@@ -103,18 +105,11 @@ function displayResults(data, loc) {
     if (!mapContainer) {
         mapContainer = document.createElement('div');
         mapContainer.id = 'mapContainer';
-        mapContainer.style.height = '50vh';  // Change this value
+        mapContainer.style.height = '50vh';
         mapContainer.style.width = '100%';
         document.body.appendChild(mapContainer);
+    }
 
-    }
-    let coords;
-    try {
-        console.log("COORDS?");
-        coords = getCoords(loc);
-        console.log(coords);
-    }
-    catch (error) {console.log("AAH!")};
     // Initialize map with a default location
     if (!map) {
         map = L.map('mapContainer').setView([34.0522, -118.2437], 12); // Default to LA
@@ -123,23 +118,24 @@ function displayResults(data, loc) {
         }).addTo(map);
     }
 
+    // Clear existing markers
     currentMarkers.forEach(marker => {
         map.removeLayer(marker);
     });
     currentMarkers = [];
 
-    // Then get the actual coordinates and update the map
+    // Set map view to search location
     getCoords(loc).then(coords => {
         if (coords) {
             map.setView(coords, 12);
         }
     });
 
-    let html = `<h3>Found ${data.result_count} providers:</h3>`;
+    // Show loading message initially
+    resultsContainer.innerHTML = `<h3>Found ${data.result_count} providers:</h3><p>Loading provider locations...</p>`;
 
-    
-
-    data.results.forEach(provider => {
+    // Create promises for all providers
+    const providerPromises = data.results.map(provider => {
         const basic = provider.basic;
         const addresses = provider.addresses || [];
         const taxonomies = provider.taxonomies || [];
@@ -150,13 +146,9 @@ function displayResults(data, loc) {
             || addresses[0]
             || {};
 
-
-        
         // Handle different provider types (Individual vs Organization)
         let providerName = '';
         let providerType = '';
-        
-
         
         if (basic.first_name && basic.last_name) {
             // Individual provider
@@ -169,60 +161,93 @@ function displayResults(data, loc) {
             // Organization
             providerName = basic.organization_name;
             providerType = 'Organization';
-            
         } else {
-            // Fallback - sometimes the structure might be different
+            // Fallback
             providerName = 'Name not available';
             providerType = 'Unknown';
         }
         
-        // const coords = getCoords(`${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''},
-        //     ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}
-        //     `);
-        // const marker = L.marker(coords).addTo(map);
-        // marker.bindPopup(`<strong>${providerName}</strong><br>${taxonomies[0].desc}<br><small>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''},
-        //     ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</small>`);
+        const providerLoc = `${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}, ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}`;
         
-        // map.setView(coords, 15);
-        // marker.openPopup();
-        loc = `${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}, ${address.city},
-         ${address.state} ${formatZipCode(address.postal_code)}`;
-        getCoords(loc).then(coords => {
-        if (coords) {
-            const popupContent = `
-            <div>
-                <strong>${providerName}</strong><br>
-                ${taxonomies[0].desc || 'Practice Information'}<br>
-                <small>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}<br>
-                ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</small>
-            </div>
-        `;
-        
-        L.marker(coords).addTo(map).bindPopup(popupContent);
-        }
-        });        
+        return getCoords(providerLoc).then(coords => {
+            if (coords) {
+                // Add marker to map
+                const popupContent = `
+                <div>
+                    <strong>${providerName}</strong><br>
+                    ${taxonomies[0]?.desc || 'Practice Information'}<br>
+                    <small>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}<br>
+                    ${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</small>
+                </div>
+                `;
+                
+                const marker = L.marker(coords).addTo(map).bindPopup(popupContent);
+                currentMarkers.push(marker);
 
-        html +=    `<div class="doctor-card">
+                // Return HTML for this provider
+                return `<div class="doctor-card">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="doctor-name"><strong>${providerName}</strong></h5>
+                                    <p class="specialty">${taxonomies[0]?.desc || 'No specialty listed'}</p>
+                                    ${taxonomies.length > 1 ? `<p class='specialty'>${taxonomies.slice(1).map(t => t.desc).join('; ')}</p>` : ''}
+                                    <button type="button" onclick="goToCoord(this)" class="btn btn-outline-primary" data-lat="${coords[0]}" data-lng="${coords[1]}">${pin}</button>
+                                </div>
+                                <div class="col-6 contact-info">
+                                    <h5>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}</h5>
+                                    <h5>${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</h5>
+                                    ${address.telephone_number ? `<h5><p>${address.telephone_number}</p></h5>` : ''}
+                                </div>
+                            </div>
+                        </div>`;
+            } else {
+                // Return HTML without coordinates if geocoding failed
+                return `<div class="doctor-card">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="doctor-name"><strong>${providerName}</strong></h5>
+                                    <p class="specialty">${taxonomies[0]?.desc || 'No specialty listed'}</p>
+                                    ${taxonomies.length > 1 ? `<p class='specialty'>${taxonomies.slice(1).map(t => t.desc).join('; ')}</p>` : ''}
+                                    <button type="button" class="btn btn-secondary" disabled>Location unavailable</button>
+                                </div>
+                                <div class="col-6 contact-info">
+                                    <h5>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}</h5>
+                                    <h5>${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</h5>
+                                    ${address.telephone_number ? `<h5><p>${address.telephone_number}</p></h5>` : ''}
+                                </div>
+                            </div>
+                        </div>`;
+            }
+        }).catch(error => {
+            console.error('Error getting coordinates for provider:', error);
+            // Return HTML without coordinates if there's an error
+            return `<div class="doctor-card">
                         <div class="row">
                             <div class="col-6">
                                 <h5 class="doctor-name"><strong>${providerName}</strong></h5>
-                                <p class="specialty">${taxonomies[0].desc}</p>
+                                <p class="specialty">${taxonomies[0]?.desc || 'No specialty listed'}</p>
                                 ${taxonomies.length > 1 ? `<p class='specialty'>${taxonomies.slice(1).map(t => t.desc).join('; ')}</p>` : ''}
-                 
+                                <button type="button" class="btn btn-secondary" disabled>Error loading location</button>
                             </div>
                             <div class="col-6 contact-info">
                                 <h5>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}</h5>
                                 <h5>${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</h5>
-                                <h5>${address.telephone_number ? `<p>${address.telephone_number}</p>` : ''}</h5>
+                                ${address.telephone_number ? `<h5><p>${address.telephone_number}</p></h5>` : ''}
                             </div>
                         </div>
                     </div>`;
+        });
     });
-    
-    resultsContainer.innerHTML = html;
 
+    // Wait for all providers to be processed, then render
+    Promise.all(providerPromises).then(htmlParts => {
+        const html = `<h3>Found ${data.result_count} providers:</h3>` + htmlParts.join('');
+        resultsContainer.innerHTML = html;
+    }).catch(error => {
+        console.error('Error processing providers:', error);
+        resultsContainer.innerHTML = `<h3>Found ${data.result_count} providers:</h3><p>Error loading provider information.</p>`;
+    });
 }
-
 
 
 
@@ -256,12 +281,12 @@ function formatZipCode(zipCode) {
 
 
 async function getCoords(address) {
-    console.error("API KEY REQUIRED!");
+    let test = '46067991fdca425e85ef986ab3f0af21';
+
     try {
-        const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${API_KEY}`);
+        const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${test}`);
 
         const data = await response.json();
-        console.log("FOUND", data.results);
         
         if (data.results.length > 0) {
             return [parseFloat(data.results[0].geometry.lat), parseFloat(data.results[0].geometry.lng)];
@@ -277,15 +302,7 @@ async function getCoords(address) {
     }
 }
 
-function addPinFromAddress(coords, name, details) {
-            
-    
-    const marker = L.marker(coords).addTo(map);
-    marker.bindPopup(`<strong>${name}</strong><br>${details}<br><small>${address}</small>`);
-    
-    map.setView(coords, 15);
-    marker.openPopup();
-    
-    return { coords, marker };
-    
+
+function goToCoord(button) {
+    map.flyTo([parseFloat(button.dataset.lat), parseFloat(button.dataset.lng)], 18)    
 }
