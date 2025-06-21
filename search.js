@@ -281,10 +281,10 @@ function formatZipCode(zipCode) {
 
 
 async function getCoords(address) {
-    let test = '46067991fdca425e85ef986ab3f0af21';
+    console.error('API KEY REQUIRED!');
 
     try {
-        const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${test}`);
+        const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(address)}&key=${API_KEY}`);
 
         const data = await response.json();
         
