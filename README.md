@@ -20,9 +20,11 @@ A web-based search interface for the National Plan and Provider Enumeration Syst
 
 ## API Integration
 
-This application uses the official NPPES API:
+This application uses the official NPPES API, OpenCage, and Leaflet:
 ```
 https://npiregistry.cms.hhs.gov/api/
+https://opencagedata.com/
+https://leafletjs.com/
 ```
 
 ### Search Parameters
