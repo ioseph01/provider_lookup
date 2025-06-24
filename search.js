@@ -1,7 +1,10 @@
 const id = ['specialtySearch', 'stateSearch', 'city', 'zip', 'f_name', 'l_name'];
-const pin = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16"><path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-    </svg>`
-    
+const pin = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+  <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+  <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+</svg>`
+
 let map;
 let currentMarkers = []; // Track all markers
 
@@ -191,12 +194,12 @@ function displayResults(data, loc) {
                                     <h5 class="doctor-name"><strong>${providerName}</strong></h5>
                                     <p class="specialty">${taxonomies[0]?.desc || 'No specialty listed'}</p>
                                     ${taxonomies.length > 1 ? `<p class='specialty'>${taxonomies.slice(1).map(t => t.desc).join('; ')}</p>` : ''}
-                                    <button type="button" onclick="goToCoord(this)" class="btn btn-outline-primary" data-lat="${coords[0]}" data-lng="${coords[1]}">${pin}</button>
-                                </div>
+                                    </div>
                                 <div class="col-6 contact-info">
                                     <h5>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}</h5>
                                     <h5>${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</h5>
                                     ${address.telephone_number ? `<h5><p>${address.telephone_number}</p></h5>` : ''}
+                                    <button type="button" onclick="goToCoord(this)" class="btn btn-outline-primary" data-lat="${coords[0]}" data-lng="${coords[1]}">${pin}</button>
                                 </div>
                             </div>
                         </div>`;
@@ -208,12 +211,12 @@ function displayResults(data, loc) {
                                     <h5 class="doctor-name"><strong>${providerName}</strong></h5>
                                     <p class="specialty">${taxonomies[0]?.desc || 'No specialty listed'}</p>
                                     ${taxonomies.length > 1 ? `<p class='specialty'>${taxonomies.slice(1).map(t => t.desc).join('; ')}</p>` : ''}
-                                    <button type="button" class="btn btn-secondary" disabled>Location unavailable</button>
-                                </div>
+                                    </div>
                                 <div class="col-6 contact-info">
                                     <h5>${address.address_1}${address.address_2 ? ', ' + address.address_2 : ''}</h5>
                                     <h5>${address.city}, ${address.state} ${formatZipCode(address.postal_code)}</h5>
                                     ${address.telephone_number ? `<h5><p>${address.telephone_number}</p></h5>` : ''}
+                                    <button type="button" class="btn btn-secondary" disabled>Location unavailable</button>
                                 </div>
                             </div>
                         </div>`;
