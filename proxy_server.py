@@ -65,7 +65,8 @@ if __name__ == '__main__':
     print("Starting proxy server on http://localhost:3001")
     print("API requests: http://localhost:3001/api/...")
     print("Static files: http://localhost:3001/")
-    server = HTTPServer(('localhost', 3001), ProxyHandler)
+    port = int(os.environ.get('PORT', 3001))
+    server = HTTPServer(('0.0.0.0', port), ProxyHandler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
